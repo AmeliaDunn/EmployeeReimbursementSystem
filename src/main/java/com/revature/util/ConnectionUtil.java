@@ -21,10 +21,10 @@ public class ConnectionUtil {
 			Properties props = new Properties();
 			props.load(in);
 			Class.forName("oracle.jdbc.OracleDriver");
-			return DriverManager.getConnection(System.getenv("jdbc.url"), System.getenv("jdbc.username"),
-					System.getenv("jdbc.password"));
-//			return DriverManager.getConnection(props.getProperty("jdbc.url"), props.getProperty("jdbc.username"),
-//					props.getProperty("jdbc.password"));
+//			return DriverManager.getConnection(System.getenv("jdbc.url"), System.getenv("jdbc.username"),
+//					System.getenv("jdbc.password"));
+			return DriverManager.getConnection(props.getProperty("jdbc.url"), props.getProperty("jdbc.username"),
+					props.getProperty("jdbc.password"));
 
 		} catch (FileNotFoundException fnfe) {
 			fnfe.printStackTrace();
