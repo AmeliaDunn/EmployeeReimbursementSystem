@@ -31,11 +31,11 @@ public class ConnectionUtil {
 		} catch (IOException ioe) {
 			ioe.printStackTrace();
 		} catch (SQLException sqle) {
-			System.err.println(sqle.getMessage());
-			System.err.println("SQL State: " + sqle.getSQLState());
-			System.err.println("Error Code: " + sqle.getErrorCode());
+			LogThis.warn(sqle.getMessage());
+			LogThis.warn("SQL State: " + sqle.getSQLState());
+			LogThis.warn("Error Code: " + sqle.getErrorCode());
 		} catch (ClassNotFoundException cnfe) {
-			System.err.println(cnfe.getMessage());
+			LogThis.warn(cnfe.getMessage());
 		}
 		return null;
 	}
