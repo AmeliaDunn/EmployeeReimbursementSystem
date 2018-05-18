@@ -1,10 +1,13 @@
+<!DOCTYPE html>
+<html>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 
-    <!DOCTYPE html>
-    <html>
     
     <head>
+            <meta charset="UTF-8">
+            <title>Home</title>
+    
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     </head>
     
